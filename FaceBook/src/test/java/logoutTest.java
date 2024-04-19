@@ -16,6 +16,7 @@ public void logout()
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	driver.get("https://www.facebook.com/");
 	System.out.println("loggedout Successfully");
+	//hello all
 }
 
 }
