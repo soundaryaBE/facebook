@@ -14,8 +14,9 @@ public void logout()
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	String URL=System.getProperty("url");
-	driver.get(URL);
+	//String URL=System.getProperty("url");
+	//driver.get(URL);
+	driver.get("https://www.facebook.com/");
 	System.out.println("loggedout Successfully");
 	//hello all
 }
