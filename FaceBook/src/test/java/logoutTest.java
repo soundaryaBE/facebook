@@ -2,6 +2,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class logoutTest {
@@ -17,7 +18,7 @@ public void logout()
 	//String URL=System.getProperty("url");
 	//driver.get(URL);
 	driver.get("https://www.facebook.com/");
-	System.out.println("loggedout Successfully");
+	Reporter.log("loggedout Successfully",true);
 	//hello all
 }
 
