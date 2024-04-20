@@ -3,6 +3,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class loginTest {
@@ -18,5 +19,6 @@ public void login()
 	driver.findElement(By.id("email")).sendKeys("soundaryaraj62@gmail.com");
 	driver.findElement(By.id("pass")).sendKeys("Kanishk6$");
 	driver.findElement(By.name("login")).click();
+	Reporter.log("logged in successfully",true);
 }
 }
